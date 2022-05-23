@@ -60,21 +60,28 @@ public class Player : MonoBehaviour
         {
             lompat = true;
         }
+
+        if (transform.localScale.y != 1)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+            nundhuk = -1;
+            Kecepatan = 2;
+        }
     }
 
     public void nunduk()
     {
         if (nundhuk == -1)
         {
-            transform.localScale = new Vector3(1, .5f, 1);
+            transform.localScale = new Vector3(1, .7f, 1);
+            Kecepatan = .8f;
         }
         else
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(1, 0.05f, 1);
+            Kecepatan = .8f;
         }
         nundhuk = nundhuk * -1;
     }
-
-
 
 }
