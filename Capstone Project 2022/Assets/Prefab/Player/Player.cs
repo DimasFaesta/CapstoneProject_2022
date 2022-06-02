@@ -65,7 +65,7 @@ public class Player : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
             nundhuk = -1;
-            Kecepatan = 2;
+            Kecepatan = 2.3f;
         }
     }
 
