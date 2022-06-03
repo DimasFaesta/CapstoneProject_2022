@@ -390,6 +390,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d282a91904c5ff34bbce04acad774769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &65012643
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65012636}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011080659, y: 0.011080653, z: 0.0057253866}
+  m_Center: {x: 0.000009957235, y: 0.0000076226415, z: -0.0023255378}
 --- !u!1001 &72149208
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -457,6 +470,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Meja Ruang Keluarga
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: aadddfc5e6813c045b6c42e27dcfd728, type: 3}
+      propertyPath: m_TagString
+      value: Meja
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aadddfc5e6813c045b6c42e27dcfd728, type: 3}
 --- !u!1 &72149209 stripped
@@ -511,6 +528,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: aadddfc5e6813c045b6c42e27dcfd728, type: 3}
   m_PrefabInstance: {fileID: 72149208}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &72149216
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72149209}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.007672758, y: 0.0047308886, z: 0.003518789}
+  m_Center: {x: 0.00031386345, y: 0.000020756672, z: -0.0010278077}
 --- !u!1 &84353638 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6763858364670572316, guid: fccdaca807d39bd4790d121b3bebc69b, type: 3}
@@ -2280,6 +2310,10 @@ PrefabInstance:
       value: Meja Kecil
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e6f91c4ff4e37bb4599b3630fc74f693, type: 3}
+      propertyPath: m_TagString
+      value: Meja
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6f91c4ff4e37bb4599b3630fc74f693, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -2526,6 +2560,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &442213069
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442213063}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.011080659, y: 0.011080653, z: 0.0057253866}
+  m_Center: {x: 0.000009949785, y: 0.0000076226415, z: -0.0023255378}
 --- !u!1001 &449179686
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2995,6 +3042,10 @@ PrefabInstance:
       value: Meja Kecil (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e6f91c4ff4e37bb4599b3630fc74f693, type: 3}
+      propertyPath: m_TagString
+      value: Meja
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6f91c4ff4e37bb4599b3630fc74f693, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
@@ -3132,6 +3183,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8538053082472352065, guid: ef976e1b4728e5a4085bd0e7f6810e39, type: 3}
+--- !u!65 &545964336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545964331}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09568006, y: 0.053408474, z: 0.091505915}
+  m_Center: {x: -0.0016140878, y: 0.00060461165, z: -0.00019812882}
 --- !u!1 &564188175 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4985344043960018771, guid: 40ba5eb9e44b48145897a275c0a9376e, type: 3}
@@ -4515,6 +4579,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c0a47dd30764e9941bce7609425a5779, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c0a47dd30764e9941bce7609425a5779, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: c0a47dd30764e9941bce7609425a5779, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6167,6 +6235,10 @@ PrefabInstance:
       value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3775600559536782834, guid: ef976e1b4728e5a4085bd0e7f6810e39, type: 3}
+      propertyPath: m_TagString
+      value: Meja
+      objectReference: {fileID: 0}
+    - target: {fileID: 3775600559536782834, guid: ef976e1b4728e5a4085bd0e7f6810e39, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -7131,6 +7203,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d282a91904c5ff34bbce04acad774769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &2080327915
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080327908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07428873, y: 0.0236319, z: 0.042754278}
+  m_Center: {x: 0.00004558653, y: 0, z: 0.00000006200893}
 --- !u!1 &2099754984
 GameObject:
   m_ObjectHideFlags: 0
