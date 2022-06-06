@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Tanah
   - Meja
+  - MejaHolder
   layers:
   - Default
   - TransparentFX
