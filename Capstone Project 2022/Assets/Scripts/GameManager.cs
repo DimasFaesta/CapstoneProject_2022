@@ -5,18 +5,18 @@ using UnityEngine.UI;
 using EZCameraShake;
 public class GameManager : MonoBehaviour
 {
-    public Slider slide;
     public static float nilaigempa;
+    public float IntensitasGempa;
     CameraShakeInstance preset;
 
     private void Start()
     {
-        preset = CameraShaker.Instance.StartShake(slide.value / 2, 1, .5f);
+        preset = CameraShaker.Instance.StartShake(.5f, 1, .5f);
         preset.DeleteOnInactive = false;
     }
     private void Update()
     {
-        nilaigempa = slide.value;
-        preset.ScaleMagnitude = slide.value/1.5f;
+        nilaigempa = IntensitasGempa;
+        preset.ScaleMagnitude = nilaigempa * 1.5f;
     }
 }
