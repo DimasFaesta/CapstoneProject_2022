@@ -17,6 +17,6 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         nilaigempa = IntensitasGempa;
-        preset.ScaleMagnitude = nilaigempa * 1.5f;
+        preset.ScaleMagnitude = nilaigempa * 4;
     }
 }

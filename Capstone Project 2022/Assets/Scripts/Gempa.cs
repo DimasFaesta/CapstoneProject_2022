@@ -14,7 +14,7 @@ public class Gempa : MonoBehaviour
 
     public void gempa()
     {
-        rig.AddForce(new Vector3(0, 3 * GameManager.nilaigempa * Time.deltaTime, 0), ForceMode.VelocityChange);
+        rig.AddForce(new Vector3(0, 3 * GameManager.nilaigempa * 100*Time.deltaTime, 0));
         rig.AddRelativeTorque(new Vector3(Random.Range(-1, 2)*.3f, 0, 0));
     }
 
