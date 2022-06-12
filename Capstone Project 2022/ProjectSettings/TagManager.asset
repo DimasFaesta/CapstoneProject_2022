@@ -8,6 +8,7 @@ TagManager:
   - Meja
   - MejaHolder
   - Pintu
+  - Timer
   layers:
   - Default
   - TransparentFX

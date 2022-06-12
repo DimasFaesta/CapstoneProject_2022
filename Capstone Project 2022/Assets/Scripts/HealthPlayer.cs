@@ -13,7 +13,7 @@ public class HealthPlayer : MonoBehaviour
     public string nameScene;
 
     private void Awake() {
-        time = GameObject.Find("Timer").GetComponent<TimerShow>();
+        time = GameObject.FindWithTag("Timer").GetComponent<TimerShow>();
     }
     
     private void Start() {
