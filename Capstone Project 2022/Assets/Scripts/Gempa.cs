@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Gempa : MonoBehaviour
 {
+    bool aktif;
     int arah = 1;
     Rigidbody rig;
 
@@ -26,9 +27,25 @@ public class Gempa : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.collider.tag == "Tanah")
+        if (collision.collider.tag == "Tanah"&&aktif==true)
         {
             gempa();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            aktif = true;
+            gempa();
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            aktif = false;
         }
     }
 

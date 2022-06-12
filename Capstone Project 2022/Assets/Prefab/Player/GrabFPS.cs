@@ -33,23 +33,31 @@ public class GrabFPS : MonoBehaviour
     {
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit,PanjangTangan))
         {
-            if (hit.collider.attachedRigidbody)
+            if (hit.collider.CompareTag("Pintu"))
             {
-                if (megang == 1)
-                {
-                    benda = hit.rigidbody;
-                    benda.useGravity = false;
-                }
+                GameObject pintu = hit.collider.gameObject;
+
+                pintu.GetComponent<Pintu>().Aksi();
             }
-            if (megang == -1)
-            {
-                if (megang == -1)
-                {
-                    benda.useGravity = true;
-                    benda = null;
-                }
-            }
-            megang = megang * -1;
+
+            //if (hit.collider.attachedRigidbody)
+            //{
+            //    if (megang == 1)
+            //    {
+            //        benda = hit.rigidbody;
+            //        benda.useGravity = false;
+            //    }
+            //}
+            //if (megang == -1)
+            //{
+            //    if (megang == -1)
+            //    {
+            //        benda.useGravity = true;
+            //        benda = null;
+            //    }
+            //}
+            //megang = megang * -1;
+
         }
 
     }
