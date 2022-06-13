@@ -12,7 +12,6 @@ public class HealthPlayer : MonoBehaviour
     public TimerShow time;
     public string nameScene;
     public ScriptableValue scr;
-    
 
     private void Awake() {
     }

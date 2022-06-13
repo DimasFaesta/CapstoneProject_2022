@@ -9,6 +9,7 @@ TagManager:
   - MejaHolder
   - Pintu
   - Timer
+  - HighScore
   layers:
   - Default
   - TransparentFX
