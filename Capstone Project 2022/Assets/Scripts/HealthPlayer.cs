@@ -11,25 +11,28 @@ public class HealthPlayer : MonoBehaviour
     public float randomHealth;
     public TimerShow time;
     public string nameScene;
+    public ScriptableValue scr;
+    
 
     private void Awake() {
-        time = GameObject.FindWithTag("Timer").GetComponent<TimerShow>();
     }
     
     private void Start() {
-        
-        randomHealth = Random.Range(35,75);
         DontDestroyOnLoad(this.gameObject);
+        time = GameObject.FindWithTag("Timer").GetComponent<TimerShow>();
+        randomHealth = Random.Range(45,75);
+        // timerhold = scr.value;
+    }
+    private void FixedUpdate() {
         
+        // scr.value = time.timer;
+        timerhold = time.timer;
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        timerhold = time.timer;
-        if(timerhold == 0){
-            SceneManager.LoadScene(nameScene);
-        }
+
     }
 
 
@@ -48,22 +51,4 @@ public class HealthPlayer : MonoBehaviour
             }
     }
 
-    // void TimerColdown(){
-    //     timer -= Time.deltaTime;
-
-    //     float minutes = Mathf.FloorToInt((timer / 60));
-    //     float seconds = timer % 60;
-
-    //     string secodsString = seconds.ToString("F2");
-
-    //     // timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-    //     timerText.text = minutes + ":" + secodsString;
-
-    //     if (timer <= 0)
-    //     {
-    //         timer = 0;
-    //         timerText.text = "00:00";
-            
-    //     }
-    // }
 }

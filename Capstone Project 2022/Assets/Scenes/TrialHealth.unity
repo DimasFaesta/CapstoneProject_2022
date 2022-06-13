@@ -605,7 +605,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &402389715
 GameObject:
@@ -702,7 +702,7 @@ RectTransform:
   - {fileID: 1998323032}
   - {fileID: 1188688268}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -872,7 +872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7989944783664900677, guid: 08ca24c3d2614bf46b98bb9e48a5d979, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7989944783664900677, guid: 08ca24c3d2614bf46b98bb9e48a5d979, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1134,7 +1134,7 @@ Transform:
   m_Children:
   - {fileID: 2006021191}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1073473971
 MonoBehaviour:
@@ -1184,6 +1184,7 @@ MonoBehaviour:
   randomHealth: 0
   time: {fileID: 0}
   nameScene: TrialHealth2
+  scr: {fileID: 11400000, guid: 76c57176042eaea4f9a64f24f25fb532, type: 2}
 --- !u!136 &1073473974
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1371,7 +1372,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1188688267
 GameObject:
@@ -1608,7 +1609,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1354086517
 GameObject:
@@ -2307,7 +2308,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1998323031
 GameObject:
@@ -2359,6 +2360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 200fb1fe2a3a44d4cadf49bbf60c40f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scr: {fileID: 11400000, guid: 76c57176042eaea4f9a64f24f25fb532, type: 2}
   timer: 10
   timerText: {fileID: 1998323034}
 --- !u!114 &1998323034
@@ -2532,7 +2534,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2034350643
 MonoBehaviour:
@@ -2762,7 +2764,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2807100569738473564, guid: 37bea1ca3dc17b048945a17631c80463, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2807100569738473564, guid: 37bea1ca3dc17b048945a17631c80463, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2819,7 +2821,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3701248015272014083, guid: 5e5413f1a2a17a74db61eed9a20c0121, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3701248015272014083, guid: 5e5413f1a2a17a74db61eed9a20c0121, type: 3}
       propertyPath: m_LocalPosition.x

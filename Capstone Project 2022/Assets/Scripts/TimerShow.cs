@@ -2,11 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerShow : MonoBehaviour
 {
+    public ScriptableValue scr;
+
     public float timer;
     public Text timerText;
+
+    private void Start() {
+        scr.value = timer;
+    }
 
     // Update is called once per frame
     void Update()
@@ -25,6 +32,7 @@ public class TimerShow : MonoBehaviour
         {
             timer = 0;
             timerText.text = "00:00";
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
         }
     }
 }
