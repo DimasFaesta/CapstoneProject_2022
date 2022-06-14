@@ -1,0 +1,12 @@
+Source Music : https://freepd.com/world.php
+
+-	Game Over : Awkward Apocalyptic Pickup (Misc.)
+-	Main Menu : Asking Questions (Horror)
+-	Danger : - Dark Ambient (Page 2)
+               - City Run (Scoring)
+-	Evacuate : Hidden Truth (Horror)
+
+Source Music : https://mixkit.co/free-stock-music/mood/dramatic/
+-	Score Win : Discover (by Eugenio Mininni)
+
+Splash Screen : FL Studio (Buatan Sendiri)
