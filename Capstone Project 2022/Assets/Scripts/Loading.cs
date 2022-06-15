@@ -11,11 +11,10 @@ public class Loading : MonoBehaviour
 
     void Start()
     {
-        async = SceneManager.LoadSceneAsync(1);
+        async = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
         async.allowSceneActivation = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         text.text= "Sedang memuat: " + (async.progress * 100) + "%";

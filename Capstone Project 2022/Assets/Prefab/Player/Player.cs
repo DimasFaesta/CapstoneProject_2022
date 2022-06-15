@@ -21,9 +21,9 @@ public class Player : MonoBehaviour
         player = GetComponent<CharacterController>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        napak = Physics.CheckSphere(transform.position - new Vector3(0, 1f, 0), .1f);
+        napak = Physics.CheckSphere(transform.position - new Vector3(0, .8f, 0), .08f);
 
         Gravitasi();
         if (lompat==true)
@@ -59,11 +59,12 @@ public class Player : MonoBehaviour
         if (napak == true && nundhuk != 1)
         {
             lompat = true;
+            napak = false;
         }
 
         if (transform.localScale.y != 1)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = new Vector3(.8f, .8f, .8f);
             nundhuk = -1;
             Kecepatan = 2.3f;
         }
@@ -73,7 +74,7 @@ public class Player : MonoBehaviour
     {
         if (nundhuk == -1)
         {
-            transform.localScale = new Vector3(1, .7f, 1);
+            transform.localScale = new Vector3(1, .5f, 1);
             Kecepatan = .8f;
         }
         else
@@ -83,5 +84,6 @@ public class Player : MonoBehaviour
         }
         nundhuk = nundhuk * -1;
     }
+
 
 }

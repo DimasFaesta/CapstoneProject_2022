@@ -5,6 +5,7 @@ using UnityEngine;
 public class Pintu : MonoBehaviour
 {
     Animator anim;
+    public AudioSource SBuka, STerkunci;
     public bool Dikunci;
 
     void Start()
@@ -17,10 +18,16 @@ public class Pintu : MonoBehaviour
         if (anim.GetBool("Buka") == false && Dikunci == false)
         {
             anim.SetBool("Buka", true);
+            SBuka.Play();
         }
-        else
+        else if(Dikunci == false)
         {
             anim.SetBool("Buka", false);
+            SBuka.Play();
+        }
+       else 
+        {
+            STerkunci.Play();
         }
     }
 }
