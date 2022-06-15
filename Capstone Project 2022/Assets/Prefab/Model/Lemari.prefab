@@ -218,8 +218,52 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4934485530981865259}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 180}
+--- !u!1 &1663436495428113823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4497934645914638665}
+  - component: {fileID: 157749334733195483}
+  m_Layer: 0
+  m_Name: pCyilneder315
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4497934645914638665
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663436495428113823}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4934485530981865259}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &157749334733195483
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663436495428113823}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.00089706865, y: 0.0004034957, z: 0.001489014}
+  m_Center: {x: 0.00029596657, y: -0.00011836512, z: 0.0003835917}
 --- !u!1 &2434186658075285134
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,6 +671,7 @@ Transform:
   - {fileID: 1186168022186016130}
   - {fileID: 3267657621686038584}
   - {fileID: 5219432043124379067}
+  - {fileID: 4497934645914638665}
   - {fileID: 5572364241397956489}
   - {fileID: 4267290399630600659}
   m_Father: {fileID: 0}
@@ -706,7 +751,7 @@ BoxCollider:
   m_GameObject: {fileID: 5706343160058924433}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.00089706865, y: 0.0004034957, z: 0.001489014}
   m_Center: {x: 0.00029596657, y: -0.00011836512, z: 0.0003835917}
@@ -734,7 +779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51af080ea75ee214fae8fadac6ee0869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dorong: 0
   kekuatan: 90
   target: {fileID: 0}
   doroongan: {fileID: 5572364241397956489}
@@ -767,7 +811,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4934485530981865259}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1779826889384190086
 BoxCollider:

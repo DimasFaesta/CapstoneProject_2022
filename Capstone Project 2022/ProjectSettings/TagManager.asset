@@ -10,6 +10,7 @@ TagManager:
   - Pintu
   - Timer
   - HighScore
+  - FisikPlayer
   layers:
   - Default
   - TransparentFX

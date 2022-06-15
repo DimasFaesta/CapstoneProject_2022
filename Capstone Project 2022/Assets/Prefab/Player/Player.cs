@@ -6,6 +6,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     CharacterController player;
+    public GameObject debris;
+    public GameObject depan;
     Vector3 arah;
 
     float gravitasi;
@@ -19,6 +21,11 @@ public class Player : MonoBehaviour
     void Awake()
     {
         player = GetComponent<CharacterController>();
+    }
+
+    private void Start()
+    {
+        spawnDebris();
     }
 
     private void FixedUpdate()
@@ -40,6 +47,11 @@ public class Player : MonoBehaviour
     {
         player.Move(transform.forward *ArahZ *Kecepatan);
         player.Move(transform.right * ArahX * Kecepatan);
+    }
+
+    public void spawnDebris()
+    {
+        Instantiate(debris, depan.transform.position+new Vector3(Random.Range(-1f,2f),0, Random.Range(1f, 2f)), debris.transform.rotation);
     }
 
     public void Gravitasi()

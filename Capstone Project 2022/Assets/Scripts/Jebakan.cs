@@ -9,6 +9,7 @@ public class Jebakan : MonoBehaviour
     float durasi = 1;
     bool dorong;
     bool masuk;
+    bool sekali;
 
     public float kekuatan;
 
@@ -34,10 +35,11 @@ public class Jebakan : MonoBehaviour
         {
             durasi -= Time.deltaTime;
 
-            if (durasi <= 0)
+            if (durasi <= 0&&sekali==false)
             {
                 dorong = true;
                 masuk = false;
+                sekali = true;
             }
         }
     }
