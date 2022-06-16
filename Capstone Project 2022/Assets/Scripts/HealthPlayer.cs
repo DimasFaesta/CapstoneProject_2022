@@ -11,7 +11,8 @@ public class HealthPlayer : MonoBehaviour
     public float randomHealth;
     public TimerShow time;
     public GameObject Ketiban;
-    
+
+    bool aman;
     
     private void Awake() {
     }
@@ -27,34 +28,45 @@ public class HealthPlayer : MonoBehaviour
         
         // scr.value = time.timer;
         timerhold = time.timer;
-        
-        
+
+        if (aman == false && timerhold <= 0)
+        {
+            healthPlat = randomHealth;
+            randomHealth = healthPlat;
+            Debug.Log("2");
+        }
+
     }
 
-    // Update is called once per frame
-
-
-    private void OnTriggerStay(Collider other) {
-        if (other.tag == "Meja")
-            {
-                if(timerhold <= 0){
-                    healthPlat = 95;
-                }
-            }
-
-            else
-            {  if(timerhold <= 0){
-                healthPlat = randomHealth;
-                }
-            }
-    }
 
     private void OnTriggerEnter(Collider other) {
         if (other.tag == "PintuLemari")
+        {
+            Ketiban.SetActive(true);
+            Time.timeScale = 0;
+        }
+
+        if (other.tag == "Meja")
+        {
+            Debug.Log("1");
+            aman = true;
+            if (timerhold <= 0)
             {
-                Ketiban.SetActive(true);
-                Time.timeScale = 0;
+                healthPlat = 95;
             }
+            Debug.Log(aman);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Meja")
+        {
+            if (timerhold >= 0)
+            {
+                aman = false;
+            }
+        }
     }
 
 }
