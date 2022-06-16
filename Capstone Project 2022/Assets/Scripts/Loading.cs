@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Loading : MonoBehaviour
 {
     AsyncOperation async;
-    Text text;
+   public Text text;
 
     void Start()
     {
@@ -17,6 +17,9 @@ public class Loading : MonoBehaviour
 
     void Update()
     {
-        text.text= "Sedang memuat: " + (async.progress * 100) + "%";
+        if (text != null)
+        {
+            text.text = "Sedang memuat: " + (async.progress * 100) + "%";
+        }
     }
 }
