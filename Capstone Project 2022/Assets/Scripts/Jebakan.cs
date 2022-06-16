@@ -20,6 +20,7 @@ public class Jebakan : MonoBehaviour
     void Start()
     {
         rig = GetComponent<Rigidbody>();
+        target = GameObject.FindWithTag("FisikPlayer").transform;
     }
 
     void FixedUpdate()

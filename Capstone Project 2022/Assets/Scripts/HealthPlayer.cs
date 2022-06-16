@@ -19,7 +19,7 @@ public class HealthPlayer : MonoBehaviour
     private void Start() {
         DontDestroyOnLoad(this.gameObject);
         time = GameObject.FindWithTag("Timer").GetComponent<TimerShow>();
-        randomHealth = Random.Range(45,75);
+        randomHealth = Random.Range(65,75);
         // timerhold = scr.value;
     }
     private void FixedUpdate() {

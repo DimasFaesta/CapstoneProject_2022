@@ -16,6 +16,7 @@ public class ControlMobile : MonoBehaviour
     {
         player = GetComponent<Player>();
         aim = GetComponentInChildren<AimMobile>();
+        joy = GameObject.Find("Floating Joystick").GetComponent<FloatingJoystick>();
     }
 
 
