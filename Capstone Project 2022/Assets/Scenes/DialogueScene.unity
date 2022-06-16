@@ -745,7 +745,7 @@ MonoBehaviour:
   lines:
   - Aku lelah
   - Aku akan tidur dulu
-  textSpeed: 0.2
+  textSpeed: 0.1
   nama: 
 --- !u!114 &1695277297
 MonoBehaviour:
