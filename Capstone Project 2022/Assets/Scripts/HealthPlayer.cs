@@ -10,22 +10,25 @@ public class HealthPlayer : MonoBehaviour
     public float timerhold;
     public float randomHealth;
     public TimerShow time;
-    public string nameScene;
-    public ScriptableValue scr;
-
+    public GameObject Ketiban;
+    
+    
     private void Awake() {
     }
     
-    private void Start() {
+    void Start() {
         DontDestroyOnLoad(this.gameObject);
         time = GameObject.FindWithTag("Timer").GetComponent<TimerShow>();
-        randomHealth = Random.Range(65,75);
+        randomHealth = Random.Range(65,95);
         // timerhold = scr.value;
+        
     }
     private void FixedUpdate() {
         
         // scr.value = time.timer;
         timerhold = time.timer;
+        
+        
     }
 
     // Update is called once per frame
@@ -43,6 +46,14 @@ public class HealthPlayer : MonoBehaviour
             {  if(timerhold <= 0){
                 healthPlat = randomHealth;
                 }
+            }
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.tag == "PintuLemari")
+            {
+                Ketiban.SetActive(true);
+                Time.timeScale = 0;
             }
     }
 

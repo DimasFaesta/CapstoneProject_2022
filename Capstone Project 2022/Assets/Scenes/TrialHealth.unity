@@ -816,7 +816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4835028157200406575, guid: 5c5b038e5ba30454eb36a9579c325da3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 69
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4835028157200406575, guid: 5c5b038e5ba30454eb36a9579c325da3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2432,7 +2432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scr: {fileID: 11400000, guid: 76c57176042eaea4f9a64f24f25fb532, type: 2}
-  timer: 10
+  timer: 20
   timerText: {fileID: 1998323034}
   transitionFade: {fileID: 471741624}
 --- !u!114 &1998323034
