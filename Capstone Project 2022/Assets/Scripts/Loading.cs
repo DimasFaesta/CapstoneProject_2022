@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Loading : MonoBehaviour
 {
     AsyncOperation async;
-    public Text text;
+    Text text;
 
     void Start()
     {
