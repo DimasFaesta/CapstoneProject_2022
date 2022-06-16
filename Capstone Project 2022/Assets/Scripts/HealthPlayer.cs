@@ -56,6 +56,10 @@ public class HealthPlayer : MonoBehaviour
             }
             Debug.Log(aman);
         }
+
+        
+
+        
     }
 
     private void OnTriggerExit(Collider other)

@@ -12,6 +12,7 @@ TagManager:
   - HighScore
   - FisikPlayer
   - PintuLemari
+  - Api
   layers:
   - Default
   - TransparentFX
