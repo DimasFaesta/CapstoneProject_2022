@@ -10,6 +10,7 @@ public class TimerShow : MonoBehaviour
 
     public float timer;
     public Text timerText;
+    public Animator transitionFade;
 
     private void Start() {
         scr.value = timer;
@@ -32,7 +33,13 @@ public class TimerShow : MonoBehaviour
         {
             timer = 0;
             timerText.text = "00:00";
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+            StartCoroutine(FadeScene());
         }
+    }
+
+    IEnumerator FadeScene(){
+        transitionFade.SetTrigger("end");
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 }

@@ -15,7 +15,7 @@ public class HealthBar : MonoBehaviour
     {
         HealthbarPlayer = GetComponent<Image>();
         // health = maxHealth;
-        hp = GameObject.Find("Player").GetComponent<HealthPlayer>();   
+        hp = GameObject.FindWithTag("FisikPlayer").GetComponent<HealthPlayer>();   
         health = hp.healthPlat;
     }
 

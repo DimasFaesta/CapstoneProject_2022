@@ -17,7 +17,7 @@ public class HighScoreMechanic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hp = GameObject.Find("Player").GetComponent<HealthPlayer>();
+        hp = GameObject.FindWithTag("FisikPlayer").GetComponent<HealthPlayer>();
         time = GameObject.FindWithTag("Timer").GetComponent<TimerShow>();   
     }
 

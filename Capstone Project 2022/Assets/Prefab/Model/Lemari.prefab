@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 4895528309224656965}
   m_Layer: 0
   m_Name: pCube220.003
-  m_TagString: Untagged
+  m_TagString: PintuLemari
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,7 +185,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057735587689525380}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.0006023267, y: 0.00025587488, z: 0.0014890333}
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 4895528309493517036}
   m_Layer: 0
   m_Name: pCube219.003
-  m_TagString: Untagged
+  m_TagString: PintuLemari
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -354,7 +354,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2434186658075285134}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.00059806573, y: 0.00025587488, z: 0.0014890333}
