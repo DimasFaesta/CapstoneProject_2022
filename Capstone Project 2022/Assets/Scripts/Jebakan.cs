@@ -20,9 +20,9 @@ public class Jebakan : MonoBehaviour
 
     void Start()
     {
+        target = GameObject.FindWithTag("FisikPlayer").transform;
         rig = GetComponent<Rigidbody>();
         detakjantug = GameObject.Find("Detak jantung sfx").GetComponent<AudioSource>();
-        target = GameObject.FindWithTag("FisikPlayer").transform;
     }
 
     void FixedUpdate()

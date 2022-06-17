@@ -38,7 +38,7 @@ public class HighScoreMechanic : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if(other.tag=="Player"){
+        if(other.tag=="FisikPlayer"){
             Time.timeScale = 0;
             Counting();
             ScoringPanel.SetActive(true);

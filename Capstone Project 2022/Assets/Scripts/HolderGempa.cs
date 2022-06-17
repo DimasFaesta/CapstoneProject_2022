@@ -24,11 +24,11 @@ public class HolderGempa : MonoBehaviour
         GM.IntensitasGempa = 1f;
         yield return new WaitForSeconds(10f);
         GM.IntensitasGempa = 0f;
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(15f);
         GM.IntensitasGempa = 0.5f;
         yield return new WaitForSeconds(15f);
         GM.IntensitasGempa = 0f;
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(15f);
         StartCoroutine(Shaking());
         
     }

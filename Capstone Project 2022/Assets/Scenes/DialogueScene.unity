@@ -743,8 +743,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2008975536}
   lines:
-  - Aku lelah
-  - Aku akan tidur dulu
+  - Aku merasa lelah dan pusing
+  - Aku akan minum obat lalu tidur
   textSpeed: 0.1
   nama: 
 --- !u!114 &1695277297
